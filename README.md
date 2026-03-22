@@ -1,16 +1,104 @@
-# React + Vite
+# CircuitCart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CircuitCart is a modern electronics ecommerce frontend built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+It currently includes a responsive navbar and a visually rich landing page designed for electronic components shopping.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Concept
 
-## React Compiler
+- Brand: CircuitCart
+- Focus: Electronic parts marketplace (ICs, sensors, modules, tools, and components)
+- UI style: Clean, modern, and conversion-focused
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Current Features
 
-## Expanding the ESLint configuration
+- Sticky responsive navbar with:
+  - Brand identity section
+  - Desktop search bar
+  - Category navigation (Resistors, Capacitors, ICs, Sensors, Modules, Tools)
+  - Account, Wishlist, and Cart action buttons
+  - Mobile drawer menu with search + category quick links
+- Landing hero section with:
+  - Strong headline and supporting copy
+  - CTA buttons (Shop Components / View Latest Deals)
+  - Product trust stats cards
+  - Hero product image and floating offer badges
+- Highlight cards for featured electronic parts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- @tailwindcss/vite
+- ESLint 9
+
+## Project Structure
+
+```
+frontend/
+	public/
+	src/
+		assets/
+			hero.png
+		App.jsx
+		index.css
+		main.jsx
+	index.html
+	package.json
+	vite.config.js
+```
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SuhasK2005/CircuitCart.git
+cd CircuitCart
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in terminal (usually http://localhost:5173).
+
+## Available Scripts
+
+- `npm run dev` - Start Vite development server
+- `npm run build` - Create production build
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint checks
+
+## Tailwind Setup
+
+Tailwind is configured through:
+
+- `@import "tailwindcss";` in [src/index.css](src/index.css)
+- `@tailwindcss/vite` plugin in [vite.config.js](vite.config.js)
+
+## Roadmap
+
+- Product listing grid
+- Category and price filters
+- Product details page
+- Cart management and checkout flow
+- Authentication (Account/Login)
+- Wishlist persistence
+
+## Author
+
+Suhas
+
+## License
+
+This project is currently unlicensed for public use. Add a license file if you plan to open-source it.
