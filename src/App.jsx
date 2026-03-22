@@ -1,5 +1,8 @@
 import { useState } from "react";
-import heroImage from "./assets/hero.png";
+import heroImage from "./assets/parts/realistic/hero-realistic.jpg";
+import resistorCard from "./assets/parts/realistic/resistor-realistic.jpg";
+import capacitorCard from "./assets/parts/realistic/capacitor-realistic.jpg";
+import sensorCard from "./assets/parts/realistic/sensor-realistic.jpg";
 
 const navItems = [
   "Resistors",
@@ -14,14 +17,17 @@ const highlightParts = [
   {
     title: "ESP32 Dev Board",
     desc: "Wi-Fi + BLE microcontroller for rapid IoT prototyping",
+    image: resistorCard,
   },
   {
     title: "LM2596 Regulator",
     desc: "High-efficiency buck converter module for clean power",
+    image: capacitorCard,
   },
   {
     title: "BME280 Sensor",
     desc: "Temperature, humidity, and pressure in one tiny package",
+    image: sensorCard,
   },
 ];
 
@@ -238,6 +244,11 @@ function App() {
               key={part.title}
               className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
             >
+              <img
+                src={part.image}
+                alt={part.title}
+                className="mb-4 h-36 w-full rounded-xl border border-slate-200 bg-slate-50 object-cover"
+              />
               <p className="text-sm font-black text-slate-900">{part.title}</p>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {part.desc}
