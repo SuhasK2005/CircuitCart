@@ -39,7 +39,7 @@ function App() {
     <div className="min-h-screen bg-[var(--surface)] text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur">
         <div className="bg-[var(--accent)] px-4 py-2 text-center text-xs font-semibold tracking-wide text-white">
-          Free shipping above Rs 1299 on electronic components
+          Free shipping above Rs 999 on electronic components
         </div>
 
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
@@ -63,7 +63,7 @@ function App() {
                 CircuitCart
               </p>
               <p className="text-xs font-medium text-slate-500">
-                Electronic Parts Marketplace
+                Electronic PartS Marketplace
               </p>
             </div>
           </div>
